@@ -311,9 +311,9 @@ export default {
   dest: join(__dirname, 'bundle.js'),
   format: 'iife',
   plugins: [
-    posthtml({
-      parser: sugarml(),
-      plugins: [include()],
+    posthtml({
+      parser: sugarml(),
+      plugins: [include()],
       template: true  // only rollup-plugin-posthtml-template
     })
   ]
@@ -469,7 +469,6 @@ In case you want to develop your own plugin, we recommend using [posthtml-plugin
 |[posthtml-prefix-class][prefix]|[![npm][prefix-badge]][prefix-npm]|Prefix class names
 |[posthtml-modular-css][modular]|[![npm][modular-badge]][modular-npm]|Make CSS modular|
 |[posthtml-inline-css][in]|[![npm][in-badge]][in-npm]|CSS Inliner|
-|[posthtml-collect-styles][collect-styles]|[![npm][collect-styles-badge]][collect-styles-npm]|Collect styles from html and put it in the head|
 |[posthtml-collect-inline-styles][collect]|[![npm][collect-badge]][collect-npm]|Collect inline styles and insert to head tag|
 |[posthtml-style-to-file][style]|[![npm][style-badge]][style-npm]| Save HTML style nodes and attributes to CSS file|
 |[posthtml-color-shorthand-hex-to-six-digit][hex]|[![npm][hex-badge]][hex-npm]|Enforce all hex color codes to be 6-char long|
@@ -491,10 +490,6 @@ In case you want to develop your own plugin, we recommend using [posthtml-plugin
 [css-modules]: https://github.com/posthtml/posthtml-css-modules
 [css-modules-badge]: https://img.shields.io/npm/v/posthtml-css-modules.svg
 [css-modules-npm]: https://npmjs.com/package/posthtml-css-modules
-
-[collect-styles]: https://github.com/posthtml/posthtml-collect-styles
-[collect-styles-badge]: https://img.shields.io/npm/v/posthtml-collect-styles.svg
-[collect-styles-npm]: https://npmjs.com/package/posthtml-collect-styles
 
 [collect]: https://github.com/totora0155/posthtml-collect-inline-styles
 [collect-badge]: https://img.shields.io/npm/v/posthtml-collect-inline-styles.svg
@@ -524,7 +519,7 @@ In case you want to develop your own plugin, we recommend using [posthtml-plugin
 [style-badge]: https://img.shields.io/npm/v/posthtml-style-to-file.svg
 [style-npm]: https://npmjs.com/package/posthtml-style-to-file
 
-[hex]: https://github.com/code-and-send/posthtml-color-shorthand-hex-to-six-digit
+[hex]: https://github.com/posthtml/posthtml-color-shorthand-hex-to-six-digit
 [hex-badge]: https://img.shields.io/npm/v/posthtml-color-shorthand-hex-to-six-digit.svg
 [hex-npm]: https://npmjs.com/package/posthtml-color-shorthand-hex-to-six-digit
 
@@ -534,7 +529,6 @@ In case you want to develop your own plugin, we recommend using [posthtml-plugin
 |:---|:-----|:----------|
 |[posthtml-img-autosize][img]|[![npm][img-badge]][img-npm]|Auto setting the width and height of \<img\>|
 |[posthtml-to-svg-tags][svg]|[![npm][svg-badge]][svg-npm]|Convert html tags to svg equals|
-|[posthtml-webp][webp]|[![npm][webp-badge]][webp-npm]|Add WebP support for images|
 |[posthtml-favicons][favicons]|[![npm][favicons-badge]][favicons-npm]|Generate Favicons and add related tags|
 
 [img]: https://github.com/posthtml/posthtml-img-autosize
@@ -544,10 +538,6 @@ In case you want to develop your own plugin, we recommend using [posthtml-plugin
 [svg]: https://github.com/theprotein/posthtml-to-svg-tags
 [svg-badge]: https://img.shields.io/npm/v/posthtml-to-svg-tags.svg
 [svg-npm]: https://npmjs.com/package/posthtml-to-svg-tags
-
-[webp]: https://github.com/seokirill/posthtml-webp
-[webp-badge]: https://img.shields.io/npm/v/posthtml-webp.svg
-[webp-npm]: https://npmjs.com/package/posthtml-webp
 
 [favicons]: https://github.com/mohsen1/posthtml-favicons
 [favicons-badge]: https://img.shields.io/npm/v/posthtml-favicons.svg
@@ -586,7 +576,6 @@ In case you want to develop your own plugin, we recommend using [posthtml-plugin
 |[posthtml-remove-duplicates][remove-duplicates]|[![npm][remove-duplicates-badge]][remove-duplicates-npm]|Remove duplicate elements from your html|
 |[posthtml-transformer][transform]|[![npm][transform-badge]][transform-npm]|Process HTML by directives in node attrs, such as inline scripts and styles, remove useless tags, concat scripts and styles etc.|
 |[htmlnano][nano]|[![npm][nano-badge]][nano-npm]|HTML Minifier|
-|[posthtml-email-remove-unused-css][unused]|[![npm][unused-badge]][unused-npm]|Remove unused CSS from email templates|
 
 
 [remove]: https://github.com/princed/posthtml-remove-attributes
@@ -616,10 +605,6 @@ In case you want to develop your own plugin, we recommend using [posthtml-plugin
 [nano]: https://github.com/maltsev/htmlnano
 [nano-badge]: https://img.shields.io/npm/v/htmlnano.svg
 [nano-npm]: https://npmjs.com/package/htmlnano
-
-[unused]: https://github.com/code-and-send/posthtml-email-remove-unused-css
-[unused-badge]: https://img.shields.io/npm/v/posthtml-email-remove-unused-css.svg
-[unused-npm]: https://npmjs.com/package/posthtml-email-remove-unused-css
 
 [transform]: https://github.com/flashlizi/posthtml-transformer
 [transform-badge]: https://img.shields.io/npm/v/posthtml-transformer.svg
